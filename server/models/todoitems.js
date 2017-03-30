@@ -8,7 +8,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BOOLEAN,
       defaultValue: false,
     },
-  }, {
+  },
+  {
     classMethods: {
       associate: (models) => {
         TodoItem.belongsTo(models.Todo, {
